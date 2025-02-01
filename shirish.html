@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+        }
+        button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+        .option1 {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .option2 {
+            background-color: #f44336;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Will you be my valentine pookie <3</h2>
+        <button class="option1" onclick="answer('Yes i love you')">Yes</button>
+        <button class="option2" onclick="answer('No i hate youuu')">No</button>
+        <p id="response"></p>
+    </div>
+    
+    <script>
+        function answer(choice) {
+            document.getElementById("response").innerText = "You chose: " + choice;
+        }
+    </script>
+</body>
+</html>
